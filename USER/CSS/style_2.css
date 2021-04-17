@@ -1,0 +1,24 @@
+#Pro_Stalaza{
+	position:absolute;
+	max-width: 19vw;
+	max-height: 19vh;
+	margin-top: 30px;}
+
+#PROFI_pic{
+	border-radius:100%;width:100%;
+}
+.DLR_STALAZA{
+    display: none;
+	max-width: 19vw;
+    text-align: center;	
+	width:200px;
+	margin-top: -5px;
+}
+
+.DOLAR{
+	color:green;
+	font-size: 150%;
+}
+.dolarce{
+	position:absolute;
+}
