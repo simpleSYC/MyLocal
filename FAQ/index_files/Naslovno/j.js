@@ -1,6 +1,5 @@
 Vue.component("naslovo", {
-    template: `<div>
-   
+    template: `<div> 
 <p style="margin-left: 10%;margin-top: 20px;" id="google_translate_element">
 <div class="skiptranslate goog-te-gadget" style="display: none;" dir="ltr">
 <div id=":0.targetLanguage" style="display: inline;">
@@ -10,7 +9,6 @@ Vue.component("naslovo", {
 <img width="37" height="14" style="padding-right: 3px" alt="Google Translate" src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png">Translate</a>
 </span></div></p>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </div>`})
 var store="";
     var storeqqee = new Vuex.Store({
