@@ -18,7 +18,7 @@ selection of sides and salads and other good stuff.</p>
       <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
     <p><strong>More Info</strong> can be find at <a onclick="window.open('https://mylocal.sytes.net/FAQ');"
-    >this FAQ page</a></p>
+    style="color: blue;font-weight: bold;">this FAQ page</a></p>
 	
   </div>
 </div>

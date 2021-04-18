@@ -1,5 +1,5 @@
 Vue.component("contractor", {
-    template: `<div><button onclick="OpenContractor();" style="float: right;border-radius: 8px;"
+    template: `<div><button onclick="OpenContractor();" style="float: right;border-radius: 8px;margin-right: 10%;"
 >still any quastion?? ask me now</button>
 <div class="w3-modal" style="overflow:auto;display:none">
 <div class="w3-modal-content" style="padding-top: 0%;">

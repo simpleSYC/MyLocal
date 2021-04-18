@@ -6,8 +6,9 @@ Vue.component("serco", {
     <h5 class="w3-center" style="position: relative;top: 70px;"><span class="w3-tag w3-wide">Search</span></h5>
     <img src="index_files/MEDIA/LogoMylocal.png" style="width:100%;max-width:1000px;border-radius: 10px;">
     
-    <h3 style="position: relative;top: -120px;margin-bottom: -55px;text-align: center;color:#efdf9d;font-weight: bold;">Cheak registred acccount
-    <a style="display:table;margin:auto;">https://mylocal.sytes.net/<input id="cheak_user" type="text"></input></a></h3>
+    <div style=" font-size: 18px; position: relative;top: -120px;margin-bottom: -55px;text-align: center;color:#efdf9d;font-weight: bold;">
+    <h3>Cheak registred acccount</h3><a style="margin:auto;">https://mylocal.sytes.net/</a>
+    <input id="cheak_user" type="text"></input></div>
     
     <button id="serch_btn" style="margin:auto;display:block">search</button>
     </div>
