@@ -16,7 +16,7 @@ Vue.component("faq", {
 </div>
 
 </div>`})
-
+var store="";
     var storeqqee = new Vuex.Store({
     state: {
       view:"faq"
