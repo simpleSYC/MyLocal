@@ -34,19 +34,14 @@ JJ=CekDATA["JBS"]; Puni_JBS(JJ);
 
 
 
-function puniLokalno(O_o){
-	Dolarizam(O_o["RANK"]);
-
-
+function puniLokalno(O_o){ Dolarizam(O_o["RANK"]);
 
 TuriMAPOT(O_o["G_MAPS"]);
 
 
-fotoLINK=O_o["FOTO"]["Flink"];
-if(fotoLINK==false){
-document.getElementById("PROFI_pic").src="MEDIA/defalka.png";
-}else{document.getElementById("PROFI_pic").src=fotoLINK;}
-
+if(O_o["FOTO"]["Flink"]){
+document.getElementById("PROFI_pic").src=O_o["FOTO"]["Flink"];}else{
+document.getElementById("PROFI_pic").src="index_files/MEDIA/defalka.png";}
 
 setTimeout(Set_CSS_oko,500);// ova e za banestuvanje na ofsetski otkako ke se namesti fotkata
 

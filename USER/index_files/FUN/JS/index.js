@@ -224,9 +224,12 @@ if(a==1){V='Ready for action';}else
 if(a==0){V='(deactive)';}else
 if(a==2){V='Action in process';} return V;}
 
+function puniLokalno(O_o){document.getElementById("GGL_URL").value=O_o["PROFIL"]["G_MAPS"]["Loc"]["FULL"];
 
-function puniLokalno(O_o){
-  Dolarizam(O_o["PROFIL"]["RANK"]);
+document.getElementById("MPE_SHOW").checked=O_o["PROFIL"]["G_MAPS"]["STATUS"]
+if(O_o["PROFIL"]["G_MAPS"]["STATUS"]){document.getElementById("Updejt_Maps").click();}
+
+Dolarizam(O_o["PROFIL"]["RANK"]);
 
 CHK_vrf(O_o["PROFIL"]["REG"]["veri"]);
 
@@ -241,7 +244,6 @@ setTimeout(Set_CSS_oko,500);// ova e za banestuvanje na ofsetski otkako ke se na
 GETaccSTATUS(O_o["PROFIL"]["STATUS"]["AKTIV"]);
 
 document.getElementById("PRO_STATUS").innerHTML=O_o["PROFIL"]["STATUS"]["SEY"];
-
 document.getElementById("PROFIL_status").value=O_o["PROFIL"]["STATUS"]["SEY"];
 
 
