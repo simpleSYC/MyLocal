@@ -15,8 +15,14 @@ Vue.component("mdl_profilo", {
 
 
     <br><br>
-    <label style="position: absolute;margin-top: -5px;display: initial;text-align: center;color: beige;">
-    <input  class="CBmyall"  onclick="UPD_MYLL_LINKS(this);" type="checkbox" > Link my mylinks account</label> <br><br>
+    <label style="position: absolute;margin-top: -5px;display: contents;color: beige;">
+
+    <input id="Contact_ME" style="width: 70%;text-align: center;margin-bottom: 15px;" type="text"  placeholder="Contact :(tel/email/link) "/>
+<p style="float: right;">
+<input  class="CBmyall"  onclick="UPD_MYLL_LINKS(this);" type="checkbox" /><span> Link my <br> mylinks account</span>
+</p>
+
+</label> <br><br>
 
     <button type="button"  onclick="UPD_PROFILO();" style="width: auto;margin: auto;position: inherit;display: table-caption;" >update</button>
 

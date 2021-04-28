@@ -69,13 +69,11 @@ document.getElementById("Modal_FOTOset").style.display="block";
 
 
 
-
 function FotoSETbtn(){
 J_ID=document.getElementById("Modal_FOTOset").getAttribute("j_f");
 
 
 	if(J_FOTO_url){
-stara_JOBfoto=KOKOS[J_ID]["F_ime"];
 if(stara_JOBfoto!=NOVO_J_FOTO_iME){
 	
 	
@@ -92,9 +90,7 @@ MY_LINKS.child(W+"/F_src").set(J_FOTO_url);
 
 J_IMG_HRF[J_ID].src=J_FOTO_url;
 
-}
-
-}
+stara_JOBfoto=NOVO_J_FOTO_iME;}}
 
 
 /// J_ID ??? da se rastumace poposlem ova

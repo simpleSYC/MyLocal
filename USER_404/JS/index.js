@@ -34,12 +34,8 @@ JJ=CekDATA["JBS"]; Puni_JBS(JJ);
 
 
 
-
-
-
-var KOKOS="da";
-function puniLokalno(O_o){KOKOS=O_o;
-updZvzda(parseInt(O_o["RANK"]));
+function puniLokalno(O_o){
+	Dolarizam(O_o["RANK"]);
 
 
 
@@ -59,43 +55,40 @@ setTimeout(Set_CSS_oko,500);// ova e za banestuvanje na ofsetski otkako ke se na
 document.getElementById("PRO_STATUS").innerHTML=O_o["STATUS"]["SEY"];
 
 
-MYL_bezFunkcionalnosti(O_o["SETINGS"]["MYlinks"]);}
+MYL_bezFunkcionalnosti(O_o["CONTACTO"]);}
 
-function MYL_bezFunkcionalnosti(a){
-if(a){
+function MYL_bezFunkcionalnosti(A){let a=A["MYlinks"]; let C=A["CONTACT_ME"];
+if(a){document.getElementById("CONTACTOTO_MENE").remove();
 $(MYL_BEZ).slideDown("fast");
 
-MYL_BEZ.style.transform="scale(1)";    URL="https://mylinks.sytes.net/"+USER;
-
+MYL_BEZ.style.transform="scale(1)";let URL="https://mylinks.sytes.net/"+USER;
 MYL_BEZ.onclick=function(){window.open(URL);}
 }else{MYL_BEZ.style.transform="scale(0)";
-      MYL_BEZ.onclick=function(){}}}
+
+document.getElementById("CONTACTOTO_MENE").innerHTML=C; }}
 
 
-/////////////////////////////////
-var tsto;
+	  
 function TuriMAPOT(a){
-tsto=a["Loc"];
 let G_Status=a["STATUS"];
 let G_loc=a["Loc"];
-Dd="my location is under construction";
+let Dd="my location is hiden for now";
 if(G_Status){
 
-   G_0="'https://maps-api-ssl.google.com/maps?hl=en-US&amp;";
-   G_1="&amp;output=embed&amp;";
-   G_2="&amp;z=11'";	
+let G_0="'https://maps-api-ssl.google.com/maps?hl=en-US&amp;";
+let G_1="&amp;output=embed&amp;";
+let G_2="&amp;z=11'";	
 
-   G_G=G_0+G_loc["NAME"]+G_1+G_loc["KOD"]+G_2;
+let G_G=G_0+G_loc["NAME"]+G_1+G_loc["KOD"]+G_2;
 
-D_0='<iframe id="GG_MPS" style="width:95%;height: 436px;" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"';
-D_1=" src="+G_G;
-D_2='allowfullscreen="" frameborder="0"></iframe>';
+let D_0='<iframe id="GG_MPS" style="width:95%;height: 436px;" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"';
+let D_1=" src="+G_G;
+let D_2='allowfullscreen="" frameborder="0"></iframe>';
 
 Dd=D_0+D_1+D_2;}
 
-document.getElementById("MPS_HRE").innerHTML=Dd;
+document.getElementById("MPS_HRE").innerHTML=Dd;}
 
-}
 var RR=[];for(i=0;i<TBL_J_ROW.length;i++){
 	RR[i]=TBL_J_ROW[i];}
 	
@@ -121,7 +114,7 @@ J_LENTA[i].onclick=function(){Up_osven_ova(I);Plusove_Minuse(I);}
 	if(O_JBS[i]["IMG"]["F_src"]){
 	J_IMG_HRF[i].src=O_JBS[i]["IMG"]["F_src"];
 	}else{	
-	J_IMG_HRF[i].src="LandingPage/MEDIA/worker.png";}
+	J_IMG_HRF[i].src="index_files/MEDIA/worker.png";}
 	
 	
 	J_DESC[i].innerText							=" "+O_JBS[i]["JBS_DESC"];

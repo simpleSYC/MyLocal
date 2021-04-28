@@ -95,7 +95,7 @@ var modal_PROFIL = document.getElementById("Modal_PROFIL");
 var span = document.getElementsByClassName("close")[0];
 var span_PROFIL = document.getElementsByClassName("close")[1];
 
-       span.onclick = function() {modal.style.display = "none";}
+       span.onclick = function() {span.parentElement.parentElement.style.display = "none";}
 span_PROFIL.onclick = function() {modal_PROFIL.style.display = "none";}
 
 var DROPdwnBTN=document.getElementById("MENIlink");
@@ -115,7 +115,7 @@ window.onclick = function(event) {
 ////////////////////////// modelskoto kopce
 function MDL_PROFIL(){modal_PROFIL.style.display = "block";    STAR_info("x");
 a=W["PROFIL"]["REG"]["veri"];
-if(a==true){
+if(a==true){ 
 document.getElementById("E_status").innerHTML="verifyed";}else{
 document.getElementById("E_status").innerHTML="unverified";}
 }
@@ -134,29 +134,39 @@ function UPD_PROFILO(){
 promSTATUS();
 promeniTUKA();
 
+promeniContacto();
+
 modal_PROFIL.style.display = "none";}
 
-function promSTATUS(){b=W["PROFIL"]["STATUS"]["SEY"];
-a=document.getElementById("PROFIL_status").value;//.slice(0,141);  /// da se krate tejsj
+function promeniContacto(){let b=W["PROFIL"]["CONTACTO"]["CONTACT_ME"];
+  let a= document.getElementById("Contact_ME").value;
+if(b!=a){
+if(document.getElementById("Contact_ME").disabled){
+   document.getElementById("CONTACTOTO_MENE").innerHTML="";}else{
+   document.getElementById("CONTACTOTO_MENE").innerHTML=a;}
+
+
+MY_LINKS.child("ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/CONTACTO/CONTACT_ME").set(a);
+MY_LINKS.child("MYLOCAL/"+userNAME+"/PROFIL/CONTACTO/CONTACT_ME").set(a);}}
+
+
+
+function promSTATUS(){let b=W["PROFIL"]["STATUS"]["SEY"];
+let a=document.getElementById("PROFIL_status").value;//.slice(0,141);  /// da se krate tejsj
 document.getElementById("PRO_STATUS").innerHTML=a;
 
 if(b!=a){
 MY_LINKS.child("ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/STATUS/SEY").set(a);
 MY_LINKS.child("MYLOCAL/"+userNAME+"/PROFIL/STATUS/SEY").set(a);}}
 
-var KOKOS_1;
 
-function promeniTUKA(){
-	if(FTO_url!=false){
-stara_FTOname=KOKOS_1["Fime"];
-if(stara_FTOname!=NOVO_FOTO_iME){
+function promeniTUKA(){if(FTO_url){
+  
 document.getElementById("PROFI_pic").src=FTO_url;
 MY_LINKS.child("ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/FOTO/Flink").set(FTO_url);
 MY_LINKS.child("MYLOCAL/"+userNAME+"/PROFIL/FOTO/Flink").set(FTO_url);
 
-KOKOS_1["Fime"]=NOVO_FOTO_iME;
 
-}
 
 }}
 
@@ -205,8 +215,7 @@ for (i=0;i<5;i++){
 	J_STATUS[i].innerText						=val2text(O_JBS[i]["JBS_STATUS"]);
 	J_DESC[i].innerText							=O_JBS[i]["JBS_DESC"];
 	
-	TITLE_J_FIXED[i].innerText		=J_TITLE[i].children[0].innerHTML
-}
+	TITLE_J_FIXED[i].innerText		=J_TITLE[i].children[0].innerHTML;}
 
 }
 
@@ -215,18 +224,15 @@ if(a==1){V='Ready for action';}else
 if(a==0){V='(deactive)';}else
 if(a==2){V='Action in process';} return V;}
 
-var KOKOS;
 
-function puniLokalno(O_o){ KOKOS=["JBS"]; KOKOS_1=O_o["PROFIL"]["FOTO"];
-updZvzda(parseInt(O_o["PROFIL"]["RANK"]));
-E_status=O_o["PROFIL"]["REG"]["veri"];
+function puniLokalno(O_o){
+  Dolarizam(O_o["PROFIL"]["RANK"]);
 
-CHK_vrf(E_status);
+CHK_vrf(O_o["PROFIL"]["REG"]["veri"]);
 
-fotoLINK=O_o["PROFIL"]["FOTO"]["Flink"];
-if(fotoLINK==false){
-document.getElementById("PROFI_pic").src="MEDIA/defalka.png";
-}else{document.getElementById("PROFI_pic").src=fotoLINK;}
+if(O_o["PROFIL"]["FOTO"]["Flink"])
+{document.getElementById("PROFI_pic").src=O_o["PROFIL"]["FOTO"]["Flink"];}else
+{document.getElementById("PROFI_pic").src="MEDIA/defalka.png";}
 
 document.getElementById("wew").src=document.getElementById("PROFI_pic").src;
 
@@ -239,22 +245,34 @@ document.getElementById("PRO_STATUS").innerHTML=O_o["PROFIL"]["STATUS"]["SEY"];
 document.getElementById("PROFIL_status").value=O_o["PROFIL"]["STATUS"]["SEY"];
 
 
-MYL_bezFunkcionalnosti(O_o["PROFIL"]["SETINGS"]["MYlinks"]);
+document.getElementById("Contact_ME").value=O_o["PROFIL"]["CONTACTO"]["CONTACT_ME"];
+MYL_bezFunkcionalnosti(O_o["PROFIL"]["CONTACTO"]["MYlinks"]);
 
-Onadeni_Evnts();}
+Onadeni_Evnts(O_o["JBS"]);}
 
 function MYL_bezFunkcionalnosti(a){
-if(a){
-$(MYL_BEZ).slideDown("fast");
+
+document.getElementsByClassName("CBmyall")[0].checked=a;
+
+
+if(a){document.getElementById("CONTACTOTO_MENE").innerHTML="";
+  document.getElementById("Contact_ME").style.opacity=0.3;document.getElementById("Contact_ME").disabled=true;
+
+  $(MYL_BEZ).slideDown("fast");
 
 MYL_BEZ.style.transform="scale(1)";
 
-}else{MYL_BEZ.style.transform="scale(0)";}}
+}else{MYL_BEZ.style.transform="scale(0)";
+document.getElementById("CONTACTOTO_MENE").innerHTML=document.getElementById("Contact_ME").value;
+document.getElementById("Contact_ME").style.opacity=1; document.getElementById("Contact_ME").disabled=false;}}
 
 function UPD_MYLL_LINKS(a){let V=a.checked;
-	       let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/SETINGS/MYlinks";
+if(V){document.getElementById("Contact_ME").style.opacity=0.3;document.getElementById("Contact_ME").disabled=true; document.getElementById("CONTACTOTO_MENE").innerHTML="";}
+else{ document.getElementById("Contact_ME").style.opacity=1;  document.getElementById("Contact_ME").disabled=false;}
+
+	       let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/CONTACTO/MYlinks";
 MY_LINKS.child(P).set(V);
-	       let W="MYLOCAL/"+userNAME+"/PROFIL/SETINGS/MYlinks";
+	       let W="MYLOCAL/"+userNAME+"/PROFIL/CONTACTO/MYlinks";
 MY_LINKS.child(W).set(V);
 MYL_bezFunkcionalnosti(V);
 
@@ -270,7 +288,7 @@ function Set_CSS_oko(){/// da namesti ofstetski css na odreden element
 
 $("#Service_btn").slideDown("fast");
 $("#Local_btn").slideDown("fast");
-document.getElementById("TBLA").style.marginTop=(document.getElementById("Zapirkata").offsetTop+22)+"px";}
+document.getElementById("TBLA").style.marginTop=(DLR_stalaza.offsetTop+122)+"px";}
 
 
 var input = document.getElementsByTagName("input")[1];///press enter to work 

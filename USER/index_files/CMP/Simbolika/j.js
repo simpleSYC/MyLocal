@@ -3,16 +3,7 @@ Vue.component("simbolica", {
     <div id="Pro_Stalaza">
       <img id="PROFI_pic">
      
-     <a class="DLR_STALAZA"> 
-      <i class='fa fa-dollar DOLAR'></i>
-      <i class='fa fa-dollar DOLAR'></i>
-      <i class='fa fa-dollar DOLAR'></i>
-      <span id="zprka" style='font-size:10px;color:#fff0;'>_</span>
-      <i class='fa fa-dollar DOLAR'></i>
-      <i class='fa fa-dollar DOLAR'></i>
-      <i class='fa fa-dollar DOLAR'></i>
-      <div style="color:green;font-weight: bold;"><span id="Zapirkata" style='font-size: 30px;'>,</span>$$</div>
-     </a>
+     <a class="DLR_STALAZA"> </a>
      
      </div>
 

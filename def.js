@@ -4,17 +4,17 @@ var DLR_stalaza=document.getElementsByClassName("DLR_STALAZA")[0];
 var DLR_smbol=document.getElementsByClassName("DOLAR");
 var zpr=document.getElementById("zprka");
 
-function updZvzda(a){
-if(a){DLR_stalaza.style.display="block ruby"; 
-if(a<4){zpr.remove();}
-for(i=DLR_smbol.length-1;i>0;i--){ DLR_smbol[i].style="font-size:"+(190-(a*12))+"%";
+function Dolarizam(a){let LL=a.length; let pxl=(15+(2*LL))+"px";
+                      if(LL>1){let Stringo=[a.slice(0,-3),a.slice(-3)];
+DLR_stalaza.style.display="block ruby";
+
+DLR_stalaza.style.color="#13b713";
+
+DLR_stalaza.innerHTML="<span style='font-size:"+pxl+";' >"+
+Stringo[0]+"</span><span>"+Stringo[1]+"</span>";
 
 
-if(i+1>a){DLR_smbol[DLR_smbol.length-i].remove();}}
-DLR_smbol[0].style="font-size:"+(190-(a*12))+"%";}
-
-
-else{DLR_stalaza.style.display="block ruby";DLR_stalaza.style.opacity=0;}}
+}}
 
 ScrenRedsing();function ScrenRedsing(){ 
 if(screen.width<400){

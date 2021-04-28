@@ -2,7 +2,7 @@ Vue.component("mapskooo", {
     template: `<div>
     <div style="margin: auto;margin-top: -20px;z-index: 3;position: relative;width: 100%;display: inline-block;">
     <span>google maps url of your local area<br><span>https://www.google.com/maps/</span>
-    <input id="GGL_URL" style="border-radius: 5px;z-index:3;" type="text" placeholder="adreasse , region , city.." onchange="UPD_novTxT();"></span>
+    <input id="GGL_URL" style="border-radius: 5px;z-index:3;" type="text" placeholder="FULL URL HERE !" onchange="UPD_novTxT();"></span>
     <br>
     <button id="Updejt_Maps" style="width: auto;float: left;top: -68px;position: relative;">Updejt</button>
     
