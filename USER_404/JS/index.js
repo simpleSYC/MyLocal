@@ -1,8 +1,7 @@
 
-var DODATOK=window.location.href.slice(28);
+var DODATOK=location.href.slice(28);
 
-
-var USER="1234t";
+var USER=DODATOK;
 
 KOJeOVOJ(USER);
 
