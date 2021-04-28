@@ -107,8 +107,6 @@ J_LENTA[i].onclick=function(){Up_osven_ova(I);Plusove_Minuse(I);}
 	J_STATUS[i].parentElement.parentElement.children[0].remove();
 	J_STATUS[i].innerText						=val2text(O_JBS[i]["JBS_STATUS"]);
 	
-	
-	
 	J_IMG_SELECTION[i].parentElement.parentElement.remove();
 	
 	if(O_JBS[i]["IMG"]["F_src"]){
@@ -116,9 +114,7 @@ J_LENTA[i].onclick=function(){Up_osven_ova(I);Plusove_Minuse(I);}
 	}else{	
 	J_IMG_HRF[i].src="index_files/MEDIA/worker.png";}
 	
-	
 	J_DESC[i].innerText							=" "+O_JBS[i]["JBS_DESC"];
-	
 	
 //	RR.push(TBL_J_ROW[i]);
 	
@@ -127,19 +123,14 @@ J_LENTA[i].onclick=function(){Up_osven_ova(I);Plusove_Minuse(I);}
 }}
 
 
-
-
-
-
 function val2text(a){let V=null;
 if(a==1){V='Ready for action';}else
 if(a==0){V='(deactive)';}else
 if(a==2){V='Action in process';} return V;}
 
 
-
 function Set_CSS_oko(){/// da namesti ofstetski css na odreden element
 
 $("#Service_btn").slideDown("fast");
 $("#Local_btn").slideDown("fast");
-document.getElementById("TBLA").style.marginTop=document.getElementById("Zapirkata").offsetTop+22+"px";}
+document.getElementById("TBLA").style.marginTop=DLR_stalaza.offsetTop+122+"px";}
