@@ -1,8 +1,5 @@
-
-var DODATOK=location.href.slice(28);
-
+var DODATOK=location.href.slice(26);
 var USER=DODATOK;
-
 KOJeOVOJ(USER);
 
 function KOJeOVOJ(a){let JJ="";

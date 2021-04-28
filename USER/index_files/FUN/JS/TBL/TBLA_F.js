@@ -78,7 +78,7 @@ document.getElementById("MPS_HRE").innerHTML=D_0+D_1+D_2;}
 
 
 function ZemiOKdel(a){let O={ADR:null,KOD:null};
- 	  let NW=a.split("/place/",2);
+ 	 let NW=a.split("/place/",2);
 let NNWW=NW[1].split("/data=");   ///"Aalen,+Germany/@48.8236068,10.0546206,12z"
 
 let OO_1=NNWW[0].split("/@"); let O_1="q="+OO_1[0];
@@ -99,4 +99,3 @@ PromenlivoTxT=false;}
 
 
 return O;}
-
