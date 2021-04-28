@@ -5,7 +5,8 @@
 	margin-top: 30px;}
 
 #PROFI_pic{
-	border-radius:100%;width:100%;
+	border-radius:100%;max-width: 250px;
+	margin-top: 30px;max-height: 250px;
 }
 .DLR_STALAZA{
     display: none;
