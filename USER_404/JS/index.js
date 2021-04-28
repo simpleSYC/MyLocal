@@ -7,12 +7,10 @@ var USER="1234t";
 KOJeOVOJ(USER);
 
 function KOJeOVOJ(a){let JJ="";
-
-USERdef="MYlocal/U_S_E_R/WEBuser/"+a;
-		                                         
+let USERdef="MYLOCAL/"+a;	                                         
 MY_LINKS.child(USERdef).once("value")
   .then(function(snapshot) {
-     CekDATA = snapshot.val();
+let    CekDATA = snapshot.val();
 	  
 	if(CekDATA!=undefined){
 		//go ima i da videme dali e aktiven status 

@@ -1,5 +1,3 @@
-
-
 function Plusove_Minuse(n){
 for(i=0;i<PLUS_MINUS.length;i++){
  if(i!=n){PLUS_MINUS[i].innerHTML="+";}}
@@ -66,41 +64,37 @@ $("#Updejt_Maps").click(function(){  TuriMAPOT();  });
 
 
 function TuriMAPOT(){
-	
-	JJ=document.getElementById("GGL_URL").value;
+let G_0="'https://maps-api-ssl.google.com/maps?hl=en-US&amp;";
+let G_1="&amp;output=embed&amp;";
+let G_2="&amp;z=11'";let JJ=document.getElementById("GGL_URL").value;
+        let YY=ZemiOKdel(JJ);
+let G_G=G_0+YY["ADR"]+G_1+YY["KOD"]+G_2;
 
-   G_0="'https://maps-api-ssl.google.com/maps?hl=en-US&amp;";
-   G_1="&amp;output=embed&amp;";
-   G_2="&amp;z=11'";	
+let D_0='<iframe id="GG_MPS" style="width:95%;height: 436px;" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"';
+let D_1=" src="+G_G;
+let D_2='allowfullscreen="" frameborder="0"></iframe>';
 
-YY=ZemiOKdel(JJ);
-          G_G=G_0+YY["ADR"]+G_1+YY["KOD"]+G_2;
-
-D_0='<iframe id="GG_MPS" style="width:95%;height: 436px;" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"';
-D_1=" src="+G_G;
-D_2='allowfullscreen="" frameborder="0"></iframe>';
-
-Dd=D_0+D_1+D_2;
-
-document.getElementById("MPS_HRE").innerHTML=Dd;
-}
+document.getElementById("MPS_HRE").innerHTML=D_0+D_1+D_2;}
 
 
-function ZemiOKdel(a){O={ADR:null,KOD:null};
- 	 NW=a.split("/place/",2);
-NNWW=NW[1].split("/data=");   ///"Aalen,+Germany/@48.8236068,10.0546206,12z"
+function ZemiOKdel(a){let O={ADR:null,KOD:null};
+ 	  let NW=a.split("/place/",2);
+let NNWW=NW[1].split("/data=");   ///"Aalen,+Germany/@48.8236068,10.0546206,12z"
 
-OO_1=NNWW[0].split("/@"); O_1="q="+OO_1[0];
+let OO_1=NNWW[0].split("/@"); let O_1="q="+OO_1[0];
 
-QQ_1=OO_1[1].split(","); Q_1="ll="+QQ_1[0]+QQ_1[1];
+let QQ_1=OO_1[1].split(",");  let Q_1="ll="+QQ_1[0]+QQ_1[1];
 
 O["ADR"]=O_1;
 O["KOD"]=Q_1;
 
-if(PromenlivoTxT){let P="MYlocal/U_S_E_R/UID/"+SIFRA+"/"+userNAME+"/PROFIL/G_MAPS/Loc";
-				  let W="MYlocal/U_S_E_R/WEBuser/"+userNAME+"/PROFIL/G_MAPS/Loc";
-                         LOC={NAME:O["ADR"],KOD:O["KOD"],FULL:a};
-   MY_LINKS.child(P).set(LOC);
+if(PromenlivoTxT){
+let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/G_MAPS/Loc";
+	  let W="MYLOCAL/"+userNAME+"/PROFIL/G_MAPS/Loc";
+                  let LOC={NAME:O["ADR"],KOD:O["KOD"],FULL:a};
+MY_LINKS.child(P).set(LOC);
+MY_LINKS.child(W).set(LOC);
+
 PromenlivoTxT=false;}
 
 

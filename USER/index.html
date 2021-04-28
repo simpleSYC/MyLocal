@@ -1,82 +1,40 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>mylocal</title><link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/style.css"/> 
-  <link rel="stylesheet" href="CSS/style_2.css"/>
-  <link rel="stylesheet" href="CSS/TBL_btns.css"/>
+<link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="index_files/SYT/CSS/style.css"> 
+  <link rel="stylesheet" href="index_files/SYT/CSS/style_2.css">
+  <link rel="stylesheet" href="index_files/SYT/CSS/TBL_btns.css">
   
-<link rel="stylesheet" href="../dist/input_editor/CSS/prism.css">
-<script src="../dist/input_editor/CSS/prism.js"></script>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../dist/input_editor/CSS/prism.css">
+<script type="text/javascript" src="../dist/input_editor/CSS/prism.js"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>        
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.1.2/vuex.min.js"></script>
 
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-
+<!-- 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/darkly/bootstrap.min.css">
-
-
-
-
+  <div id="AAAA" ><link href="index_files/" rel="stylesheet">
+    <aaa/>
+  </div><script src="index_files/" type="text/javascript"></script>
+-->
 
 </head><body>
+<div id="login_div" class="main-div"><link href="index_files/CMP/logiranskoto/c.css" rel="stylesheet">
+  <logiranskoto/>
+</div><script src="index_files/CMP/logiranskoto/j.js" type="text/javascript"></script>
 
-  <div id="login_div" class="main-div">
-   <h3 id="TiTle" style="text-align:center;position: relative;" >Welcome to mylocal </h3>
-  <img src="img/MYlinks.png" style="display: block;border-radius:45px;margin-left: auto;margin-right: auto;width: 73%;margin-top:-50px;max-width: 600px;" >
-  <p id="ErorTXT" style="color:red;margin: 0px;text-align: center;"></p>
-  <div id="Lin">
-    <input type="email" placeholder="Email..." id="email_field_1" />
-    <input type="password" placeholder="Password..." id="password_field_1" />
-   <div>
-    <button type="button"  onclick="login();">Login to Account</button> <hr>
-    <button type="button"  onclick="SUP(true)">Sing Up</button> 
-	<button type="button"  style="position: absolute;z-index: -1;bottom: 0px;left:0px;margin: 10px;width: auto;background-color: cadetblue;color: white;" onclick="window.open('https://1kinger.github.io/web/#s4');">what is mylocal ?</button> <br>
-   </div>
-  </div>
-	
-  <div id="Sup" style="display:none;">
-   <p id="TitLINK" class="TITlink">https://mylocal.sytes.net/1kinger</p>
-	<input type="text" placeholder="1kinger" id="username_field" oninput="Imenik(this.value);" />
-  	<input type="email" placeholder="Email..." id="email_field_2" oninput="CKMail(this.value);"  />
-    <input type="password" placeholder="Password..." id="password_field_2" oninput="PAS_L(this.value);" />
-   <div>	
-	    <button type="button"  onclick="SingUP();">Sing Up</button> <hr>
-		<button type="button"  onclick="SUP(false);">back</button> 
-  </div>
- </div>
-</div>
-
-
-
-  <div id="user_div" class="loggedin-div" style="display:contents; width: 100%; z-index: 3; position: relative;">
+<div id="user_div" class="loggedin-div" style="display:contents; width: 100%; z-index: 3; position: relative;">
  
- 
-<h3 id="user_para" style="text-align: center; margin: auto;position: relative;margin-top: 70px;margin-bottom: -57px;"></h3>
+ <div id="Simbolika" ><link href="index_files/CMP/Simbolika/c.css" rel="stylesheet">
+  <simbolica/>
+ </div><script src="index_files/CMP/Simbolika/j.js" type="text/javascript"></script>
 
-    
-
-<div id="Pro_Stalaza">
-<img id="PROFI_pic">
- 
- <a class="DLR_STALAZA"> 
- <i class='fas fa-dollar-sign DOLAR'></i>
- <i class='fas fa-dollar-sign DOLAR'></i>
- <i class='fas fa-dollar-sign DOLAR'></i>
- <span id="zprka" style='font-size:10px;color:#fff0;'>_</span>
- <i class='fas fa-dollar-sign DOLAR'></i>
- <i class='fas fa-dollar-sign DOLAR'></i>
- <i class='fas fa-dollar-sign DOLAR'></i>
-<div style="color:green;font-weight: bold;"><span id="Zapirkata" style='font-size: 30px;'>,</span>$$</div>
- </a>
- 
- </div>
- 
  <!-- TBL e sanata bingo linija !!!! -->
-<div id="TBLA"  style="text-align: center;"> 
+<div id="TBLA"  style="text-align: center;">
 
 <button id="Service_btn">my service</button> 
-<p id="potpunka" style="height:35px;display:none;">
+<p id="potpunka" style="height:35px;display:none;"><!-- ova e stalaza myall-->
 
 
 <div id="bez_stalaza" style="position:absolute;right: 15%;margin-top: -50px;display:none;">
@@ -88,12 +46,9 @@
 </svg></button>
 </div>
 
-
 </p>
 
-
-
-
+<!-- ova se raskopiruca 5 pati -->
 <div class="TBL_ROW">
 <button class="well lnta">
 <i class="plus_minus">+</i><span class="j_title">sdas ada job</span></button>
@@ -122,6 +77,33 @@
  </div>
 </div>
 
+<div class="TBL_ROW">
+<button class="well lnta">
+<i class="plus_minus">+</i><span class="j_title">sdas ada job</span></button>
+
+<div class="JB_STNGS">
+
+<span class="Label_btnce">Title</span>
+<div  class="well J_TITLE">
+<button class="btn btn-success"  style="width: 100%;">job title</button></div>
+
+<div style="width:99.5%;display:block ruby;">
+
+<div style="width:50%"><span class="Label_btnce">Status</span>
+<div class="well J_STATUS"><button class="btn btn-success J_status"></button></div></div>
+
+<div style="width:50%"><span class="Label_btnce">Image</span>
+<div  class="well J_IMG_STATUS"><button class="btn btn-success J_img_S"></button></div></div>
+
+</div>
+
+<span class="Chk_prewiev">* chek prewiev desing</span><span class="dscp_naslov">Description</span> 
+<div class="well J_DESC">
+<button class="btn btn-success">
+<img class="J_img_Lnk"><xmp class="J_description">heyy, how you do that??</xmp></button></div>
+
+ </div>
+</div>
 
 <div class="TBL_ROW">
 <button class="well lnta">
@@ -151,6 +133,33 @@
  </div>
 </div>
 
+<div class="TBL_ROW">
+<button class="well lnta">
+<i class="plus_minus">+</i><span class="j_title">sdas ada job</span></button>
+
+<div class="JB_STNGS">
+
+<span class="Label_btnce">Title</span>
+<div  class="well J_TITLE">
+<button class="btn btn-success"  style="width: 100%;">job title</button></div>
+
+<div style="width:99.5%;display:block ruby;">
+
+<div style="width:50%"><span class="Label_btnce">Status</span>
+<div class="well J_STATUS"><button class="btn btn-success J_status"></button></div></div>
+
+<div style="width:50%"><span class="Label_btnce">Image</span>
+<div  class="well J_IMG_STATUS"><button class="btn btn-success J_img_S"></button></div></div>
+
+</div>
+
+<span class="Chk_prewiev">* chek prewiev desing</span><span class="dscp_naslov">Description</span> 
+<div class="well J_DESC">
+<button class="btn btn-success">
+<img class="J_img_Lnk"><xmp class="J_description">heyy, how you do that??</xmp></button></div>
+
+ </div>
+</div>
 
 <div class="TBL_ROW">
 <button class="well lnta">
@@ -180,280 +189,47 @@
  </div>
 </div>
 
-
-<div class="TBL_ROW">
-<button class="well lnta">
-<i class="plus_minus">+</i><span class="j_title">sdas ada job</span></button>
-
-<div class="JB_STNGS">
-
-<span class="Label_btnce">Title</span>
-<div  class="well J_TITLE">
-<button class="btn btn-success"  style="width: 100%;">job title</button></div>
-
-<div style="width:99.5%;display:block ruby;">
-
-<div style="width:50%"><span class="Label_btnce">Status</span>
-<div class="well J_STATUS"><button class="btn btn-success J_status"></button></div></div>
-
-<div style="width:50%"><span class="Label_btnce">Image</span>
-<div  class="well J_IMG_STATUS"><button class="btn btn-success J_img_S"></button></div></div>
-
-</div>
-
-<span class="Chk_prewiev">* chek prewiev desing</span><span class="dscp_naslov">Description</span> 
-<div class="well J_DESC">
-<button class="btn btn-success">
-<img class="J_img_Lnk"><xmp class="J_description">heyy, how you do that??</xmp></button></div>
-
- </div>
-</div>
-
-
-<div class="TBL_ROW">
-<button class="well lnta">
-<i class="plus_minus">+</i><span class="j_title">sdas ada job</span></button>
-
-<div class="JB_STNGS">
-
-<span class="Label_btnce">Title</span>
-<div  class="well J_TITLE">
-<button class="btn btn-success"  style="width: 100%;">job title</button></div>
-
-<div style="width:99.5%;display:block ruby;">
-
-<div style="width:50%"><span class="Label_btnce">Status</span>
-<div class="well J_STATUS"><button class="btn btn-success J_status"></button></div></div>
-
-<div style="width:50%"><span class="Label_btnce">Image</span>
-<div  class="well J_IMG_STATUS"><button class="btn btn-success J_img_S"></button></div></div>
-
-</div>
-
-<span class="Chk_prewiev">* chek prewiev desing</span><span class="dscp_naslov">Description</span> 
-<div class="well J_DESC">
-<button class="btn btn-success">
-<img class="J_img_Lnk"><xmp class="J_description">heyy, how you do that??</xmp></button></div>
-
- </div>
-</div>
-
-
-<br><button id="Local_btn">my local</button>
-<div id="Mapsko" style="display:none;margin-top: 15px;">
-
-<div style="margin: auto;margin-top: -20px;z-index: 3;position: relative;width: 100%;display: inline-block;">
-<span>google maps url of your local area<br><span>https://www.google.com/maps/</span>
-<input id="GGL_URL" style="border-radius: 5px;z-index:3;" type="text" placeholder="adreasse , region , city.." onchange="UPD_novTxT();"></span>
-<br>
-<button id="Updejt_Maps" style="width: auto;float: left;top: -68px;position: relative;">Updejt</button>
-
-
-
-<label class="switch" onclick="" style="float: right;top: -57px;">
-  <span style="position: relative;top: -30px;">Actived</span><input id="MPE_SHOW" type="checkbox">
-  <span class="slider round"></span></label>
-
-</div>
 <br>
 
-<div id="MPS_HRE" style="position: relative;top: -54px;z-index:2;">
+<button id="Local_btn">my local</button>
 
+ <div id="Mapsko" style="display:none;margin-top: 15px;" ><link href="index_files/CMP/Mapsok/c.css" rel="stylesheet">
+   <mapskooo/>
+ </div><script src="index_files/CMP/Mapsok/j.js" type="text/javascript"></script>
 </div>
 
-	
-</div>
-
-</div>
-
-    
+<div id="DaskoBTNSKO" ><link href="index_files/CMP/DaskoBTNSKO/c.css" rel="stylesheet">
+ <dasko_btns/>
+</div><script src="index_files/CMP/DaskoBTNSKO/j.js" type="text/javascript"></script>
  
- 
-<button type="button"  onclick="STATS(SW);PREview();" style="position: absolute;top: 0px;left: 0px;width: auto;margin: 20px;">prewie</button>
-<button type="button"  onclick="MDL_PROFIL();" style="position: absolute;top: 0px;right: 0px;width: auto;margin: 20px;">profil update</button>
+<div id="J_modalot" class="modal"><link href="index_files/" rel="stylesheet">
+  <mdl_jobsoto/>
+</div><script src="index_files/" type="text/javascript"></script>
 
+<div id="Modal_PROFIL" class="modal" style="overflow: auto;" ><link href="index_files/CMP/MDL_Profilot/c.css" rel="stylesheet">
+  <mdl_profilo/>
+</div><script src="index_files/CMP/MDL_Profilot/j.js" type="text/javascript"></script>
 
-<div id="SWITCH_GG">
-<span>Wiget Status </span><br>
-<label  class="switch" onclick="Aktiv(this,0);" >
-  <input id="main_SW" type="checkbox" >
-  <span class="slider round"></span>
-</label><br><span id="STatusTxT" style="color:green;">Activ</span></div>
-
-<button id="LOG_OUT" type="button"  onclick="STATS(SW);logout();">Logout</button>
-
-
-
-<!-- tuka ke e modalskijot stngs --->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p id="SHW_link"></p>
-	
-<div class="topnav" id="myTopnav">
-
-<div style="float: left;text-align: center;">
-  <span id="STATS_linkce" style="color:green;">Activ</span><br>
-<label class="switch" onclick="Aktiv(this,1);" >
-  <input type="checkbox" >
-  <span class="slider round"></span>
-</label></div>
-
-
-  <div class="dropdown" id="MENIlink">
-    <button type="button"  class="dropbtn" onclick="DROPdwnbtn();" >Options 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div id="Lopci" class="dropdown-content" >
-      <a onclick="par(0);" class="LL"></a>
-      <a onclick="par(1);" class="LL"></a>
-      <a onclick="par(2);" class="LL"></a>
-      <a onclick="par(3);" class="LL"></a>
-      <a onclick="par(4);" class="LL"></a>
-      <a onclick="par(5);" class="LL"></a>
-    </div>
-  </div> 
-  
-  <a style="font-size:30px;"><i id="Btn_LOGO" ></i></a>
-  
-</div> <br>
-
-<div> 
-
-  <input style="width:100%;" type="text" id="LINK_txt"  oninput="SHW_LinkUPDT(this);" name="Name" required>
-  <div style="display: block ruby;">
-    <button type="button"  onclick="MESTENJE(this,1)" style="float:left;width: auto;margin: 10px;" >Save</button>
-    <button type="button"  onclick="MESTENJE(this,null)" style="float:right;width: auto;margin: 10px;" >Cancel</button>
-  </div>
-	
-
-</div>
-
-	
-  </div>
-
-</div>
-
-
-<div id="Modal_PROFIL" class="modal" style="overflow: auto;">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-	
-	
-<p> update Status text <i style="color: cadetblue;font-size: large;" class="fas fa-question-circle" onclick="STAR_info(0);"></i></p>
-<input type="text" id="PROFIL_status" style="width: 90%;margin: auto;display: table-caption;" ><br><br>
-
-<p> update PROFIL pic <i style="color: cadetblue;font-size: large;" class="fas fa-question-circle" onclick="STAR_info(1);"></i><input type="file" value="upload" id="fileButon" style="width: auto;float: right;position: inherit;"></p>
-<img id="wew" src="MEDIA/defalka.png" style="width: auto;max-height: 200px;margin: auto;display:table-caption;border-radius: 50%;">
-<p id="usr_email"></p>
-<p> email account  verification status   : <span id="E_status"></span> <button id="re_snd_email">re send email</button></p>
-<p> update Update Star <i style="color: cadetblue;font-size: large;" class="fas fa-question-circle" onclick="STAR_info(2);"></i><button type="button"  onclick="BYproces();" style="width: auto;float: right;position: inherit;">add <i class='fas fa-star'></i></button></p>
-
-
-
-
-
-
-
-<br><br>
-<label style="position: absolute;margin-top: -5px;display: initial;text-align: center;color: beige;">
-<input  class="CBmyall"  onclick="UPD_MYLL_LINKS(this);" type="checkbox" > Link my mylinks account</label> <br><br>
-
-
-
-
-
-
-<p id="info_star"></p>	 
-	
-<p>INVITE CODE : <i style="color: cadetblue;font-size: large;" class="fas fa-question-circle" onclick="STAR_info(3);"></i>
-<br><span id="inv_cod">**********<span/></p>
-
-<button type="button"  onclick="UPD_PROFILO();" style="width: auto;margin: auto;position: inherit;display: table-caption;" >update</button>
-
-
-  </div>
-
-</div>
-<!-- --->
-
-	
-	
-	
-	
- <div id="Modal_FOTOset" class="modal" style="overflow: auto;"><!-- Modal content -->
-  <div class="modal-content" style="margin-bottom: 200px;">
-    <span class="close" onclick="this.parentElement.parentElement.style='display:none;';RESETparaMETARS();">&times;</span>
-	
-   <br><input type="file" value="upload" id="fileButonJ_FOTO" style="width: auto;float: right;position: inherit;">
-    <img class="View_FOTO"><i id="noFOTO" class='far fa-image blankIMG'></i>
-    
-    <button type="button"  onclick="FotoSETbtn();RESETparaMETARS();" style="width: auto;margin: auto;position: inherit;display: grid;float: left;" >update</button>
-    <button type="button"  onclick="FOTO_model.style='display:none;';RESETparaMETARS();" style="width: auto;margin: auto;position: inherit;display: grid;float: right;background:#c4572c;" >cancel</button>
-
-  </div>
- </div>
-	
-	
+<div id="Modal_FOTOset" class="modal" style="overflow: auto;" ><link href="index_files/CMP/MDL_FotoSet/c.css" rel="stylesheet">
+  <mdl_foto_set/>
+</div><script src="index_files/CMP/MDL_FotoSet/j.js" type="text/javascript"></script>
 	
 	<h2 id="PRO_STATUS" style="position: absolute;z-index: -1;display: table-caption;text-align: center;"><br><br><br><br> LOADING........</h2>
 	
-</div>	
-<!--   -->	
-
-	
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
-
-
-<!-- Add additional services that you want to use -->
-<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
-
-<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
-<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
-
+</div>
+<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+<script type='text/javascript' src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
 <script type='text/javascript' src='../def.js'></script>
-
-<script type='text/javascript' src='JS/def.js'></script>
-
-
+<script type='text/javascript' src='index_files/FUN/JS/def.js'></script>
 
 <script type='text/javascript' src="../dist/input_editor/inline-edit.jquery.js"></script>
-<script type='text/javascript' src='JS/TBL/TBL_def.js'></script>
-<script type='text/javascript' src='JS/TBL/TBLA_F.js'></script>
-
-<script type='text/javascript' src='JS/firebase/firebase-mylocal.js' ></script>
-<script type='text/javascript' src='JS/FTO/fto.js' ></script>
-
-<script type='text/javascript' src='JS/index.js' ></script>
+<script type='text/javascript' src='index_files/FUN/JS/TBL/TBL_def.js'></script>
+<script type='text/javascript' src='index_files/FUN/JS/TBL/TBLA_F.js'></script>
+<script type='text/javascript' src='index_files/FUN/JS/firebase/firebase-mylocal.js' ></script>
+<script type='text/javascript' src='index_files/FUN/JS/FTO/fto.js' ></script>
+<script type='text/javascript' src='index_files/FUN/JS/index.js' ></script>
 
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-	
-</body></html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"></body></html>

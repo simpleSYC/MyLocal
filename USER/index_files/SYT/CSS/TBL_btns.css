@@ -1,9 +1,5 @@
-
-
-
 h2 { font-size: 1.2em;}
 .container { margin: 150px auto; }
-
 
 
 #Service_btn{margin: auto; display:none;
@@ -19,17 +15,14 @@ h2 { font-size: 1.2em;}
 	    
 		
     
-	
 #Local_btn{margin: auto; display:none; z-index: 4;
-
-top: -25px;
+    top: -25px;
     position: relative;
-	
     width: auto;
     padding: 8px;
     margin-bottom: 11px;
-    background-color: ##3f8b97;
-    border-color: ##3f8b97;
+    background-color: #3f8b97;
+    border-color: #3f8b97;
     font-weight: bold;
     font-size: 15px;}
 	

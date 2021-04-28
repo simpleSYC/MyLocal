@@ -1,7 +1,4 @@
-
-
 //<iframe id="GG_MPS" style="width:95%;" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox"  allowfullscreen="" frameborder="0"></iframe>
-
 var TBL				=document.getElementById("TBLA");
 
 var MAPS_F			=document.getElementById("GG_MPS");
@@ -24,27 +21,29 @@ var J_D_LSNT		=document.getElementsByClassName("well J_DESC");
 
 
 var SW_main			=document.getElementById("main_SW");
-$(SW_main).click(function(){let P="MYlocal/U_S_E_R/UID/"+SIFRA+"/"+userNAME+"/PROFIL/STATUS/AKTIV";
-                 MY_LINKS.child(P).set(SW_main.checked);
+$(SW_main).click(function(){
+           let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/STATUS/AKTIV";
+MY_LINKS.child(P).set(SW_main.checked);
 			 
-           let W="MYlocal/U_S_E_R/WEBuser/"+userNAME+"/PROFIL/STATUS/AKTIV";
+           let W="MYLOCAL/"+userNAME+"/PROFIL/STATUS/AKTIV";
 MY_LINKS.child(W).set(SW_main.checked);});
 
 ///////////////
-var SW_MPE			=document.getElementById("MPE_SHOW");
-$(SW_MPE).click(function(){let P="MYlocal/U_S_E_R/UID/"+SIFRA+"/"+userNAME+"/PROFIL/G_MAPS/STATUS";
-                MY_LINKS.child(P).set(SW_MPE.checked);
+var SW_MPE=document.getElementById("MPE_SHOW");
+$(SW_MPE).click(function(){
+           let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/G_MAPS/STATUS";
+MY_LINKS.child(P).set(SW_MPE.checked);
 
-           let W="MYlocal/U_S_E_R/WEBuser/"+userNAME+"/PROFIL/G_MAPS/STATUS";
+           let W="MYLOCAL/"+userNAME+"/PROFIL/G_MAPS/STATUS";
 MY_LINKS.child(W).set(SW_MPE.checked);});
 
 function Onadeni_Evnts(){
-for(i=0;i<5;i++){let I=i;
- let P="MYlocal/U_S_E_R/UID/"+SIFRA+"/"+userNAME+"/JBS/"+i;
-let WB="MYlocal/U_S_E_R/WEBuser/"+userNAME+"/JBS/"+i;
-J_TITLE[i].onchange		=function(){let x=this.children[0].value;	MY_LINKS.child(P+"/TITLE").set(x);  	MY_LINKS.child(WB+"/TITLE").set(x); 		FixNaslov(this,I); }
-J_STATUS[i].onchange	=function(){let x=txt2val(this);			MY_LINKS.child(P+"/JBS_STATUS").set(x);	MY_LINKS.child(WB+"/JBS_STATUS").set(x); }
-J_D_LSNT[i].onchange	=function(){let x=this.children[0].value;	MY_LINKS.child(P+"/JBS_DESC").set(x);	MY_LINKS.child(WB+"/JBS_DESC").set(x); }}
+for(i=0;i<5;i++){let I=parseInt(i);
+let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/JBS/"+i;
+    let WB="MYLOCAL/"+userNAME+"/JBS/"+i;
+J_TITLE[i].onchange		=function(){let x=this.children[0].value;	MY_LINKS.child(P+"/TITLE").set(x);  	  MY_LINKS.child(WB+"/TITLE").set(x); 		FixNaslov(this,I); }
+J_STATUS[i].onchange	=function(){let x=txt2val(this);			    MY_LINKS.child(P+"/JBS_STATUS").set(x);	MY_LINKS.child(WB+"/JBS_STATUS").set(x); }
+J_D_LSNT[i].onchange	=function(){let x=this.children[0].value;	MY_LINKS.child(P+"/JBS_DESC").set(x);   MY_LINKS.child(WB+"/JBS_DESC").set(x); }}
 
 }
 function txt2val(a){let y=a.innerHTML;let V=null;

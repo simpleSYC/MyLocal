@@ -7,7 +7,7 @@ UPD_Pic.addEventListener("change", function(e){
 	
 	var file = e.target.files[0];
 	
-var storageRef= firebase.storage().ref().child("MYlocal/"+SIFRA+"/PROFIL_pic/"+file.name);
+var storageRef= firebase.storage().ref().child("MYLOCAL/"+SIFRA+"/"+userNAME+"/PROFIL_pic/"+file.name);
 
 var task=storageRef.put(file);  /// ova funkcionira kako sto treba
 
@@ -29,10 +29,10 @@ reader.onload = function (){
 FTO_UPLOAD_view.src =reader.result;}
 reader.readAsDataURL(file);
 
-MY_LINKS.child("MYlocal/U_S_E_R/UID/"+SIFRA+"/PROFIL/FOTO/Fime").set(file.name);
+MY_LINKS.child("ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/PROFIL/FOTO/Fime").set(file.name);
 
-
-MY_LINKS.child("MYlocal/U_S_E_R/WEBuser/"+userNAME+"/PROFIL/FOTO/Fime").set("ProfilPIC");
+/////////?????????????????? 
+MY_LINKS.child("MYLOCAL/"+userNAME+"/PROFIL/FOTO/Fime").set("ProfilPIC");
 
 
 NOVO_FOTO_iME=file.name;
@@ -79,8 +79,8 @@ stara_JOBfoto=KOKOS[J_ID]["F_ime"];
 if(stara_JOBfoto!=NOVO_J_FOTO_iME){
 	
 	
-let P="MYlocal/U_S_E_R/UID/"+SIFRA+"/"+userNAME+"/JBS/"+J_ID+"/IMG/";
-let W="MYlocal/U_S_E_R/WEBuser/"+userNAME+"/JBS/"+J_ID+"/IMG/";
+let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/JBS/"+J_ID+"/IMG/";
+let W="MYLOCAL/"+userNAME+"/JBS/"+J_ID+"/IMG/";
 
 MY_LINKS.child(P+"/F_ime").set(NOVO_J_FOTO_iME);
 MY_LINKS.child(W+"/F_ime").set(NOVO_J_FOTO_iME);
@@ -97,7 +97,7 @@ J_IMG_HRF[J_ID].src=J_FOTO_url;
 }
 
 
-
+/// J_ID ??? da se rastumace poposlem ova
 
 
 document.getElementById("Modal_FOTOset").setAttribute("j_f","");
@@ -160,8 +160,8 @@ document.getElementById("noFOTO").style="display:none;";
 
 FTO_J_preview.src =reader.result;}
 reader.readAsDataURL(file);
-let P="MYlocal/U_S_E_R/UID/"+SIFRA+"/"+userNAME+"/JBS/"+J_ID+"/IMG/F_ime";
-let W="MYlocal/U_S_E_R/WEBuser/"+userNAME+"/JBS/"+J_ID+"/IMG/F_ime";
+let P="ID/"+SIFRA+"/"+userNAME+"/MYLOCAL/JBS/"+J_ID+"/IMG/F_ime";
+let W="MYLOCAL/"+userNAME+"/JBS/"+J_ID+"/IMG/F_ime";
 
 MY_LINKS.child(P).set(file.name);
 
