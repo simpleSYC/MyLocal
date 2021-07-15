@@ -1,6 +1,6 @@
 Vue.component("serco", {
     template: `<div>
-    <div class="w3-container" id="menu"><br><br>
+    <div class="w3-container" id="menu">
     <div class="w3-content" style="max-width:700px">
     
     <h5 class="w3-center" style="position: relative;top: 70px;"><span class="w3-tag w3-wide">Search</span></h5>
