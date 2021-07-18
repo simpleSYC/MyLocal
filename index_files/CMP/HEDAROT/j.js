@@ -13,7 +13,7 @@ Vue.component("headerot", {
           <a href="#menu" class="w3-button w3-block w3-black">Search</a>
         </div>
         <div class="w3-col s3">
-          <a style="position: inherit; margin-top: -6px; padding: 0" onclick="window.open('https://mylocal.sytes.net/USER');" class="w3-button w3-block w3-black"
+          <a style="position: inherit; margin-top: -6px; padding: 0" onclick="window.open('./USER');" class="w3-button w3-block w3-black"
             >Log in <br />
             Sing up</a
           >
