@@ -73,8 +73,9 @@ function MYL_bezFunkcionalnosti(A) {
     $(MYL_BEZ).slideDown("fast");
 
     MYL_BEZ.style.transform = "scale(1)";
+    let URL = "https://mylinks.sytes.net/" + USER;
     MYL_BEZ.onclick = function () {
-      window.open(MYLOCAL_URL + "/" + USER);
+      window.open(URL);
     };
   } else {
     MYL_BEZ.style.transform = "scale(0)";
@@ -132,7 +133,7 @@ function Puni_JBS(a) {
       if (O_JBS[i]["IMG"]["F_src"]) {
         J_IMG_HRF[i].src = O_JBS[i]["IMG"]["F_src"];
       } else {
-        J_IMG_HRF[i].src = "index_files/MEDIA/worker.png";
+        J_IMG_HRF[i].src = "./index_files/MEDIA/defalka.png";
       }
 
       J_DESC[i].innerText = " " + O_JBS[i]["JBS_DESC"];
@@ -157,9 +158,7 @@ function val2text(a) {
 }
 
 function Set_CSS_oko() {
-  /// da namesti ofstetski css na odreden element
-  EL_["SIMBOLIKA"]["USER_NAME_txt"].style.marginTop = "5px";
-
+  document.getElementsById("User_name").style.marginTop = "5px";
   $("#Service_btn").slideDown("fast");
   $("#Local_btn").slideDown("fast");
   document.getElementById("TBLA").style.marginTop = DLR_stalaza.offsetTop + 60 + "px";
