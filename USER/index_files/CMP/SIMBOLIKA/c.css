@@ -1,0 +1,61 @@
+#User_name {
+  margin-top: 70px;
+  width: 100%;
+}
+
+#Service_btn {
+  margin: auto;
+  display: none;
+  margin-bottom: auto;
+  width: auto;
+  padding: 8px;
+  margin-bottom: 11px;
+  background-color: #155915;
+  border-color: #155915;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#Local_btn {
+  margin: auto;
+  display: none;
+  z-index: 4;
+  top: -25px;
+  position: relative;
+  width: auto;
+  padding: 8px;
+  margin-bottom: 11px;
+  background-color: #3f8b97;
+  border-color: #3f8b97;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#Pro_Stalaza {
+  position: absolute;
+  max-width: 19vw;
+  max-height: 19vh;
+}
+
+#PROFI_pic {
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: 250px;
+}
+#DLR_STALAZA {
+  display: none;
+  max-width: 19vw;
+  text-align: center;
+  width: 200px;
+  margin-top: -5px;
+}
+
+.DOLAR {
+  color: green;
+  font-size: 150%;
+}
+.dolarce {
+  position: absolute;
+}
