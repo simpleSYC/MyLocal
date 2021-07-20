@@ -6,8 +6,8 @@ Vue.component("loginn", {
   
     <br />
     <div id="Lin">
-      <input type="email" placeholder="Email..." id="email_LogIn"  value="suport1kinger@gmail.com"/>
-      <input type="password" placeholder="Password..." id="password_LogIn" value="pass123123" />
+      <input type="email" placeholder="Email..." id="email_LogIn" />
+      <input type="password" placeholder="Password..." id="password_LogIn" />
       <div>
         <button type="button" id="Login_btn">Login to Account</button>
         <hr />
