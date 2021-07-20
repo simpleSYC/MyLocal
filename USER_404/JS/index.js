@@ -10,7 +10,7 @@ function KOJeOVOJ_444(a) {
       puniLokalno(C["PROFIL"]);
       Puni_JBS(C["JBS"]);
 
-      EL_["SIMBOLIKA"]["USER_NAME_txt"].innerHTML = USER;
+      document.getElementsById("User_name").innerHTML = USER;
     });
 }
 
