@@ -1,9 +1,9 @@
 .TextAREa_CLASS {
-  color: tomato;
   text-align: center;
+  height: 100px;
   width: 100%;
 }
 
 .J_description {
-  display: grid;
+  display: contents;
 }
