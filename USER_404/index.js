@@ -67,7 +67,7 @@ function Load_CMP() {
 function Load_Dodatok() {
   let O = {
     FILE: {
-      0: "./USER/index_files/FUN/DEF",
+      //      0: "./USER/index_files/FUN/DEF",
       //      1: "./USER/index_files/firebase/function",
       //      2: "./USER/index_files/CMP/Input_Editor/inline-edit.jquery",
       //    3: "./USER/index_files/FUN/TBL_def",

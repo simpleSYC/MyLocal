@@ -101,7 +101,7 @@ function Puni_JBS(a) {
   for (i = 0; i < 5; i++) {
     J_TITLE[i].children[0].innerText = O_JBS[i]["TITLE"];
     J_STATUS[i].innerText = val2text(O_JBS[i]["JBS_STATUS"]);
-    J_DESC[i].innerText = O_JBS[i]["JBS_DESC"];
+    J_DESC[i].innerHTML = O_JBS[i]["JBS_DESC"];
 
     TITLE_J_FIXED[i].innerText = J_TITLE[i].children[0].innerHTML;
   }

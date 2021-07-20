@@ -22,7 +22,9 @@ Vue.component("job_stalaza", {
 <span class="Chk_prewiev">* chek prewiev desing</span><span class="dscp_naslov">Description</span> 
 <div class="well J_DESC"> 
 <button class="btn btn-success">
-<img class="J_img_Lnk"><div class="J_description"> </div></button></div>
+  <img class="J_img_Lnk">
+  <xmp class="J_description"></xmp>
+</button></div>
 
  </div>
 </div>`,

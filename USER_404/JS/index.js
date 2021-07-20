@@ -73,9 +73,8 @@ function MYL_bezFunkcionalnosti(A) {
     $(MYL_BEZ).slideDown("fast");
 
     MYL_BEZ.style.transform = "scale(1)";
-    let URL = "https://mylinks.sytes.net/" + USER;
     MYL_BEZ.onclick = function () {
-      window.open(URL);
+      window.open(MYLOCAL_URL + "/" + USER);
     };
   } else {
     MYL_BEZ.style.transform = "scale(0)";

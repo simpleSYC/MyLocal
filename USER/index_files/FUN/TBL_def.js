@@ -92,7 +92,7 @@ DoIt_preset(document.getElementsByClassName("J_DESC"));
 function DoIt_preset(a) {
   for (i = 0; i < a.length; i++) {
     let I = i;
-    a[i].children[0].style = "white-space:unset;display: ruby-base;";
+    //    a[i].children[0].style = "white-space:unset;display: ruby-base;";
 
     O_J_0[i] = J_TITLE[i];
     O_J_1[i] = J_STATUS[i];
