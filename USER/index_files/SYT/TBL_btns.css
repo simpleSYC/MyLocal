@@ -56,9 +56,3 @@ h2 {
 .J_img_Lnk {
   height: 100px;
 }
-
-.J_description {
-  font-family: inherit;
-  overflow-x: hidden;
-  white-space: break-spaces;
-}
