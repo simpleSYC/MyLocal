@@ -10,7 +10,7 @@ function KOJeOVOJ_444(a) {
       puniLokalno(C["PROFIL"]);
       Puni_JBS(C["JBS"]);
 
-      document.getElementsById("User_name").innerHTML = USER;
+      document.getElementById("User_name").innerHTML = USER;
     });
 }
 
@@ -158,7 +158,7 @@ function val2text(a) {
 }
 
 function Set_CSS_oko() {
-  document.getElementsById("User_name").style.marginTop = "5px";
+  document.getElementById("User_name").style.marginTop = "5px";
   $("#Service_btn").slideDown("fast");
   $("#Local_btn").slideDown("fast");
   document.getElementById("TBLA").style.marginTop = DLR_stalaza.offsetTop + 60 + "px";
