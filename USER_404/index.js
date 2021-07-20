@@ -9,7 +9,7 @@ firebase.initializeApp({
   measurementId: "G-2YRGN7EEZN",
 });
 const MYLOCAL_URL = "https://mylocal.sytes.net"; //25 bukvi se pisuva26
-const USER = "1kinger"; //window.location.href.slice(26);
+const USER = window.location.href.slice(26);
 const DB = firebase.database().ref();
 Load_Css();
 function Load_Css() {

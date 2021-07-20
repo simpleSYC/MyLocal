@@ -4,8 +4,7 @@ var DLR_stalaza = document.getElementById("DLR_STALAZA");
 var DLR_smbol = document.getElementsByClassName("DOLAR");
 var zpr = document.getElementById("zprka");
 
-function Dolarizam(A) {
-  let a = 5;
+function Dolarizam(a) {
   if (a) {
     let DOLARS = "$$$ $$$ $$$ $$$ $$$ $$$";
     let ekstra_space = parseInt(a / 3);
