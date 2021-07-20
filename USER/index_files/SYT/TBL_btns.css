@@ -1,0 +1,64 @@
+h2 {
+  font-size: 1.2em;
+}
+.container {
+  margin: 150px auto;
+}
+
+.Label_btnce {
+  color: red;
+  text-align: center;
+  display: block ruby;
+  margin-top: -11px;
+  margin-bottom: -16px;
+}
+
+.null {
+  width: 100%;
+  text-align: center;
+}
+
+.TBL_ROW {
+  display: none;
+}
+.JB_STNGS {
+  display: none;
+}
+
+.plus_minus {
+  position: relative;
+  float: left;
+  font-size: 36px;
+  padding: 0;
+  width: auto;
+  margin-top: -19px;
+  margin-bottom: -12px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.Chk_prewiev {
+  margin-left: -100%;
+  color: #d1dfd16b;
+  position: relative;
+  float: right;
+  margin-top: -10px;
+}
+
+.dscp_naslov {
+  color: red;
+  text-align: center;
+  display: block ruby;
+  margin-bottom: -18px;
+  margin-top: -10px;
+}
+
+.J_img_Lnk {
+  height: 100px;
+}
+
+.J_description {
+  font-family: inherit;
+  overflow-x: hidden;
+  white-space: break-spaces;
+}

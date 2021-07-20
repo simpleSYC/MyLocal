@@ -1,0 +1,31 @@
+#Previev_btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: auto;
+  margin: 20px;
+}
+#ProfileEdit_btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: auto;
+  margin: 20px;
+}
+
+#SWITCH_GG {
+  position: fixed;
+  bottom: 34px;
+  left: 0px;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: #222222b8;
+}
+
+#LOG_OUT {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: auto;
+  margin: 20px;
+}
