@@ -58,4 +58,6 @@ h2 {
 }
 .J_description {
   font-family: Verdana, sans-serif;
+  white-space: break-spaces;
+  display: inline;
 }

@@ -83,7 +83,6 @@
   max-width: 900px;
 }
 
-
-.BlogSpot{
-  display: inline-flex;
+.BlogSpot {
+  display: flex;
 }
