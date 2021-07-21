@@ -1,21 +1,64 @@
-<!DOCTYPE html><html lang="en-GB"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>FAQ mylocal</title><meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <a style="margin-left: 10%; margin-top: 20px" id="google_translate_element">
+      <div class="skiptranslate goog-te-gadget" style="display: none" dir="ltr">
+        <div id=":0.targetLanguage" style="display: inline">
+          <select class="goog-te-combo" aria-label="Language Translate Widget"></select>
+        </div>
+        &nbsp;&nbsp;Powered by
+        <span style="white-space: nowrap">
+          <a class="goog-logo-link" href="https://translate.google.com" target="_blank">
+            <img width="37" height="14" style="padding-right: 3px" alt="Google Translate" src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" />Translate</a
+          >
+        </span>
+      </div></a
+    >
 
-  <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>        
-  <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.1.2/vuex.min.js"></script>
-</head><body><div style="margin: 15px;" id="google_translate_element"></div>
-<script type="text/javascript">function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');}</script>  
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="container">
+      <h2 id="TXT"></h2>
+      <div style="text-align: center">
+        <img id="LOGO" style="width: 200px; height: 200px; border-radius: 30px" /><br />
+        <a id="Link" onclick="window.open(WebUrl);" target="_blank"></a>
+      </div>
+      <div id="FAQ"></div>
+      <p id="dtUPDATE" style="text-align: right"></p>
+    </div>
+    <div id="Blanko" style="display: none">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading" data-toggle="collapse">
+            <h4 class="panel-title"></h4>
+          </div>
+          <div class="panel-collapse collapse">
+            <div class="panel-body"></div>
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="container"><h2>Term of Agriment myl 1.33--13.30--33.10</h2>
- <p style="text-align:center;"><img src="../index_files/MEDIA/LogoMylocal.png" style="width: 130px;border-radius: 25px;"><br>
-<a href="https://mylocal.sytes.net/"  target="_blank" >https://mylocal.sytes.net</a></p>
+    <script type="text/javascript" src="./data.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
 
-<div id="FAQ" ><link href="index_files/FAQ/c.css" rel="stylesheet">
-<faq/><script src="index_files/FAQ/faq.js" type="text/javascript"></script>
-</div><script src="index_files/FAQ/j.js" type="text/javascript"></script><br><br><br><br><br><br><br>
-</div></body></html>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
