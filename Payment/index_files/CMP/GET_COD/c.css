@@ -1,0 +1,21 @@
+#X_MDL_CODE_GETER {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin: -15px;
+}
+
+#New_ACC_NAME {
+  text-align: center;
+  margin: 30px;
+}
+
+#COPY_BTNOT {
+  border-radius: 11px;
+  margin-top: -13px;
+  float: inline-end;
+}
+
+#cod_button {
+  width: 100%;
+}
