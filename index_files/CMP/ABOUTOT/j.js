@@ -15,7 +15,7 @@ Vue.component("aboutot", {
         <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
         <p>Chef, Coffeeist and Owner: Liam Brown</p>
       </div>
-      <p><strong>More Info</strong> can be find at <a onclick="window.open('https://mylocal.sytes.net/FAQ');" style="color: blue; font-weight: bold">this FAQ page</a></p>
+      <p><strong>More Info</strong> can be find at <a onclick="window.open('FAQ');" style="color: blue; font-weight: bold">this FAQ page</a></p>
     </div>
   </div>
   
