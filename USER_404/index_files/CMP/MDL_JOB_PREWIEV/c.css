@@ -82,3 +82,8 @@
   width: 90%;
   max-width: 900px;
 }
+
+
+.BlogSpot{
+  display: inline-flex;
+}
