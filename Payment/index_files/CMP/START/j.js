@@ -2,11 +2,15 @@ Vue.component("start", {
   template: `
 <div class="w3-row-padding">
   <div class="w3-col l8 m6">
-    <b>Verification</b>
-    <h1 class="w3-xxxlarge w3-text-green"><b>Why need to verify my email?</b></h1>
+    <b>My local payment page</b>
+    <h1 class="w3-xxxlarge w3-text-green"><b>Why to pey?</b></h1>
     <p>
-      You need to verefuy your account for multipy reasons,, ti helping in secyritu and tryist suspects. this deys anyone from anywhere can create account that may lie thyer costumers. If you alredy
-      use some popular "username" (ex. McDonals,BMW...etc), they that own that "trend name" can apply to get that username.
+    Paying to your mylocal account will incrise your profil $ simbols.. see below price list
+    and that is in plan to be your deposit credibilitet for your biznis
+    and it can be use for some autumation proces in tech industry in our plan
+    also they will be in our system as privileged account and can get some voucher email news letter ,etcc
+    and is cool to shouw up to other peoples
+    it can be intigrate in snome automated proces in funy way
     </p>
   </div>
   <div class="w3-col l4 m6">
